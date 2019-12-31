@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="jquery-3.4.1.min.js"></script>
+	</head>
+	<body>
+		
+		<script>
+			let date = new Date();
+			console.log(date)
+			function p(s){
+			      return s < 10 ? '0' + s : s
+			   };
+			
+			let Dates = new Date();
+            const d = new Date(Dates)
+	        const resDate = d.getFullYear() + '-' + p((d.getMonth() + 1)) + '-' + p(d.getDate())
+	        const resTime = p(d.getHours()) + ':' + p(d.getMinutes()) + ':' +p(d.getSeconds())
+	        console.log(resDate+' '+ resTime);
+			
+			 
+			  	
+
+		</script>
+	</body>
+</html>
